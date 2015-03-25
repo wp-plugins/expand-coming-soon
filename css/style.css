@@ -1,0 +1,124 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 100;
+}
+html,
+body { height: 100% }
+#slide-list,
+#slide-list .carousel-inner,
+#slide-list .item,
+#slide-list .single-slide { height: 100% }
+.slide-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.slide-1 { background-image: url(../img/kochu-patar-pani.jpg) }
+.slide-2 { background-image: url(../img/rasta.jpg) }
+.slide-bg::after {
+    background: none repeat scroll 0 0 #000;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.coming-soon-wrap {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    color: #fff;
+}
+.area-overlay {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background: url(../img/crossword.png);
+}
+.coming-soon-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 99;
+}
+.coming-soon-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.area-overlay { }
+.coming-soon-text { padding-top: 50px }
+.notify-me { padding-bottom: 50px }
+.coming-soon-text h1 {
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 45px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.coming-soon-text h2 {
+    font-size: 34px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.coming-soon-text { font-size: 20px }
+.digit {
+    display: inline-block;
+    font-size: 80px;
+    position: relative;
+    overflow: hidden;
+    height: 110px;
+}
+span.dash_title { display: block }
+.notify-me { margin-top: 30px }
+.notify-me > h2 {
+    font-size: 25px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+input[type="email"] {
+    background: none repeat scroll 0 0 #000;
+    border: medium none;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 25px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+input[type="submit"] {
+    background: none repeat scroll 0 0 #8ACA4A;
+    border: medium none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 5px;
+    padding: 15px 25px;
+}
+input[type="submit"]:hover { background: #000 }
+.carousel.carousel-fade .item { transition: opacity 1s ease-in-out; -webkit-transition: opacity 1s ease-in-out; /* Safari */}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
